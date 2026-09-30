@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f7f9;
+    color: #333;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.encabezado {
+    width: 100%;
+    height: 80px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 65px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    border-bottom: 3px solid #e5e5e5;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0072ce;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    width: 100%;
+    min-height: 270px;
+
+    background: #eaf3fb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-bottom: 4px solid #f5c400;
+}
+
+.banner-contenido {
+    max-width: 700px;
+    padding: 40px;
+}
+
+.banner h1 {
+    color: #0072ce;
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.banner p {
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.boton-banner {
+    display: inline-block;
+
+    padding: 12px 30px;
+
+    background: #0072ce;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.boton-banner:hover {
+    background: #005da8;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.contenido {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 60px auto;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 70px;
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.texto {
+    flex: 1;
+
+    padding-top: 30px;
+}
+
+.texto h2 {
+    color: #333;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.texto h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 4px;
+
+    background: #0072ce;
+
+    margin-top: 10px;
+
+    border-radius: 5px;
+}
+
+.texto > p {
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BENEFICIOS
+========================= */
+
+.beneficios {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+}
+
+.beneficio {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.beneficio span {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #0072ce;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+}
+
+.beneficio:nth-child(2) span {
+    background: #f5c400;
+
+    color: #333;
+}
+
+.beneficio:nth-child(3) span {
+    background: #e30613;
+}
+
+.beneficio p {
+    color: #555;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.formulario {
+    width: 470px;
+
+    background: #ffffff;
+
+    padding: 38px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.10);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* FRANJA SUPERIOR */
+
+.formulario::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background: #0072ce;
+}
+
+
+/* PEQUEÑO DETALLE AMARILLO */
+
+.formulario::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 70px;
+    height: 6px;
+
+    background: #f5c400;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.formulario h2 {
+    text-align: center;
+
+    color: #333;
+
+    font-size: 27px;
+
+    margin-top: 5px;
+
+    margin-bottom: 8px;
+}
+
+.formulario > p {
+    text-align: center;
+
+    color: #888;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.formulario label {
+    display: block;
+
+    color: #444;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 6px;
+
+    background: #fafafa;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+
+    border-color: #0072ce;
+
+    background: white;
+
+    box-shadow: 0 0 5px rgba(0, 114, 206, 0.15);
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+.formulario button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #0072ce;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background: #005da8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 100%;
+
+    background: #ffffff;
+
+    padding: 40px 65px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border-top: 3px solid #e5e5e5;
+
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.footer-logo img {
+    width: 110px;
+}
+
+footer h3 {
+    color: #0072ce;
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .encabezado {
+        padding: 15px 25px;
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+
+        padding: 35px 30px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .encabezado {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .formulario {
+        padding: 28px 22px;
+    }
+}
